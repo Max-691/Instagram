@@ -3,16 +3,25 @@ const article = document.createElement('article');
 body.appendChild(article);
 
 const topDiv = document.createElement('div');
-topDiv.id="top-div";
+topDiv.classList.add('top-div');
 article.appendChild(topDiv);
 
 const imgContainer = document.createElement('div');
+imgContainer.classList.add('img-container')
+topDiv.appendChild(imgContainer);
 
-const mainDiv = document.createElement('div');
-mainDiv.id="main-div";
-article.appendChild(mainDiv);
+const profilePicture = document.createElement('img');
+profilePicture.src="../img/default-pp.jpg"
+imgContainer.appendChild(profilePicture);
 
-const bottomDiv = document.createElement('div');
-bottomDiv.id="bottom-div";
-article.appendChild(bottomDiv);
+const topUl = document.createElement('ul');
+imgContainer.appendChild(topUl);
+
+const liUsername = document.createElement('li');
+liUsername.textContent="username";
+topUl.appendChild(liUsername);
+
+const liSponso = document.createElement('li');
+liSponso.textContent="Sponsored";
+topUl.appendChild(liSponso);
 

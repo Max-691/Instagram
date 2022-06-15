@@ -11,6 +11,7 @@ article{
     justify-content: space-between;
     align-items: center;
     background-color: red;
+    padding-right: 10px;
 }
 
 .top-div ul{
@@ -38,6 +39,7 @@ article{
     background-color: red;
     width: 100%;
     justify-content: space-between;
+    padding-right: 10px;
 }
 
 i{
@@ -48,6 +50,7 @@ i{
 
 .bottom-div ul{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 8px;
 }
 
@@ -60,4 +63,8 @@ ul{
     padding: 0;
     margin: 0;
     list-style-type: none;
+}
+
+.bottom-div p{
+    width: 100%;
 }
