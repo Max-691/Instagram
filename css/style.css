@@ -5,7 +5,6 @@ body{
     font-family: 'Roboto', sans-serif;
     line-height: 1;
     color: black;
-    background-color: #3d3c3c;
     display: flex;
     justify-content: center;
 }
@@ -61,7 +60,23 @@ article{
     width: 100%;
 }
 
+.bottom-div ul {
+    display: flex;
+}
+
+.bottom-div ul li{
+    margin-left: -1rem;
+}
 
 .bottom-div img{
-    width: 6%;
+    width: 15%;
+}
+
+.bottom-div p:last-of-type{
+    flex-basis: 100%;
+}
+
+.bookmarked{
+    display: flex;
+    justify-content: right;
 }

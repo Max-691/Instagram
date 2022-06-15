@@ -77,16 +77,20 @@ const shareImg = document.createElement('img');
 shareImg.src="../img/send.png";
 shareLi.appendChild(shareImg);
 
-//Number of likes (paragraph)
-const nbOfLikes = document.createElement('p');
-nbOfLikes.textContent="400594"
-bottomDiv.appendChild(nbOfLikes);
 
-
-//Bookmark button at right of likes, comment, share
+//Bookmark button at right of likes, comment, sharePlive
 const bookmarked = document.createElement('div');
+bookmarked.classList.add('bookmarked');
 bottomDiv.appendChild(bookmarked);
 
 const bookmarkedImg = document.createElement('img');
 bookmarkedImg.src="../img/bookmark.png";
 bookmarked.appendChild(bookmarkedImg);
+
+/*
+//Number of likes (paragraph)
+const nbOfLikes = document.createElement('p');
+nbOfLikes.textContent="400594"
+bottomDiv.appendChild(nbOfLikes);
+
+*/
