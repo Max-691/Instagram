@@ -12,7 +12,7 @@ imgContainer.classList.add('img-container')
 topDiv.appendChild(imgContainer);
 
 const profilePicture = document.createElement('img');
-profilePicture.src="img/default-pp.jpg"
+profilePicture.src="https://random.imagecdn.app/25/25";
 imgContainer.appendChild(profilePicture);
 
 const topUl = document.createElement('ul');
@@ -95,13 +95,26 @@ nbOfLikes.textContent="400594"
 bottomDiv.appendChild(nbOfLikes);
 */
 
+
+//When click occurs on like icon, it appears checked
 likedImg.addEventListener('click', ()=>{
     likedImg.setAttribute('src', `${likedImg.src.endsWith("liked.png") ? "img/like.png" : "img/liked.png"}`);
 })
 
-
+//When click occurs on bookmark icon, it appears checked
 bookmarkedImg.addEventListener('click', ()=>{
     bookmarkedImg.setAttribute('src', `${bookmarkedImg.src.endsWith("bookmarked.png") ? "img/bookmark.png" : "img/bookmarked.png"}`)
 })
 }
 
+//Fetch API profile data
+function fetchApi (){
+    return fetch('https://randomuser.me/api/')
+    .then(response => response.json())
+    .then(data => callApi(data))
+}
+fetchApi()
+
+function callApi (data){
+    console.log(data)
+}
