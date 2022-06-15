@@ -11,7 +11,7 @@ imgContainer.classList.add('img-container')
 topDiv.appendChild(imgContainer);
 
 const profilePicture = document.createElement('img');
-profilePicture.src="../img/default-pp.jpg"
+profilePicture.src="../Instagram/img/default-pp.jpg"
 imgContainer.appendChild(profilePicture);
 
 const topUl = document.createElement('ul');
@@ -29,7 +29,7 @@ const pointsDiv = document.createElement('div');
 pointsDiv.classList.add('points-div');
 topDiv.appendChild(pointsDiv);
 const pointsImg = document.createElement('img');
-pointsImg.src="../img/more.png";  
+pointsImg.src="../Instagram/img/more.png";  
 pointsDiv.appendChild(pointsImg);
 //Main div (img/post)
 
@@ -56,7 +56,7 @@ bottomUl.appendChild(likedLi);
 
 //Like img
 const likedImg = document.createElement('img');
-likedImg.src="../img/like.png";
+likedImg.src="../Instagram/img/like.png";
 likedLi.appendChild(likedImg);
 
 // Comment li with img into
@@ -65,7 +65,7 @@ bottomUl.appendChild(commentLi);
 
 //Comment img
 const commentImg = document.createElement('img');
-commentImg.src="../img/comment.png";
+commentImg.src="../Instagram/img/comment.png";
 commentLi.appendChild(commentImg);
 
 // Share li with img into
@@ -74,7 +74,7 @@ bottomUl.appendChild(shareLi);
 
 //Share img
 const shareImg = document.createElement('img');
-shareImg.src="../img/send.png";
+shareImg.src="../Instagram/img/send.png";
 shareLi.appendChild(shareImg);
 
 
@@ -84,7 +84,7 @@ bookmarked.classList.add('bookmarked');
 bottomDiv.appendChild(bookmarked);
 
 const bookmarkedImg = document.createElement('img');
-bookmarkedImg.src="../img/bookmark.png";
+bookmarkedImg.src="../Instagram/img/bookmark.png";
 bookmarked.appendChild(bookmarkedImg);
 
 /*
@@ -93,7 +93,6 @@ const nbOfLikes = document.createElement('p');
 nbOfLikes.textContent="400594"
 bottomDiv.appendChild(nbOfLikes);
 */
-
 
 likedImg.addEventListener('click', ()=>{
     console.log(likedImg.src)
