@@ -100,4 +100,8 @@ likedImg.addEventListener('click', ()=>{
 })
 
 
+bookmarkedImg.addEventListener('click', ()=>{
+    bookmarkedImg.setAttribute('src', `${bookmarkedImg.src.endsWith("bookmarked.png") ? "img/bookmark.png" : "img/bookmarked.png"}`)
+})
 }
+
