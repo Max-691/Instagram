@@ -1,3 +1,5 @@
+
+
 for(let i = 0; i <= 6; i++){
     const body = document.body;
 const article = document.createElement('article');
@@ -107,6 +109,7 @@ bookmarkedImg.addEventListener('click', ()=>{
 })
 }
 
+/*
 //Fetch API profile data
 function fetchApi (){
     return fetch('https://randomuser.me/api/')
@@ -118,3 +121,4 @@ fetchApi()
 function callApi (data){
     console.log(data)
 }
+*/
