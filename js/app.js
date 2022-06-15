@@ -92,5 +92,10 @@ bookmarked.appendChild(bookmarkedImg);
 const nbOfLikes = document.createElement('p');
 nbOfLikes.textContent="400594"
 bottomDiv.appendChild(nbOfLikes);
-
 */
+
+
+likedImg.addEventListener('click', ()=>{
+    console.log(likedImg.src)
+    likedImg.setAttribute('src', `${likedImg.src.endsWith("liked.png") ? "../img/like.png" : "../img/liked.png"}`);
+})
