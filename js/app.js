@@ -1,4 +1,5 @@
-const body = document.body;
+for(let i = 0; i <= 6; i++){
+    const body = document.body;
 const article = document.createElement('article');
 body.appendChild(article);
 
@@ -11,7 +12,7 @@ imgContainer.classList.add('img-container')
 topDiv.appendChild(imgContainer);
 
 const profilePicture = document.createElement('img');
-profilePicture.src="../Instagram/img/default-pp.jpg"
+profilePicture.src="img/default-pp.jpg"
 imgContainer.appendChild(profilePicture);
 
 const topUl = document.createElement('ul');
@@ -29,7 +30,7 @@ const pointsDiv = document.createElement('div');
 pointsDiv.classList.add('points-div');
 topDiv.appendChild(pointsDiv);
 const pointsImg = document.createElement('img');
-pointsImg.src="../Instagram/img/more.png";  
+pointsImg.src="img/more.png";  
 pointsDiv.appendChild(pointsImg);
 //Main div (img/post)
 
@@ -56,7 +57,7 @@ bottomUl.appendChild(likedLi);
 
 //Like img
 const likedImg = document.createElement('img');
-likedImg.src="../Instagram/img/like.png";
+likedImg.src="img/like.png";
 likedLi.appendChild(likedImg);
 
 // Comment li with img into
@@ -65,7 +66,7 @@ bottomUl.appendChild(commentLi);
 
 //Comment img
 const commentImg = document.createElement('img');
-commentImg.src="../Instagram/img/comment.png";
+commentImg.src="img/comment.png";
 commentLi.appendChild(commentImg);
 
 // Share li with img into
@@ -74,7 +75,7 @@ bottomUl.appendChild(shareLi);
 
 //Share img
 const shareImg = document.createElement('img');
-shareImg.src="../Instagram/img/send.png";
+shareImg.src="img/send.png";
 shareLi.appendChild(shareImg);
 
 
@@ -84,7 +85,7 @@ bookmarked.classList.add('bookmarked');
 bottomDiv.appendChild(bookmarked);
 
 const bookmarkedImg = document.createElement('img');
-bookmarkedImg.src="../Instagram/img/bookmark.png";
+bookmarkedImg.src="img/bookmark.png";
 bookmarked.appendChild(bookmarkedImg);
 
 /*
@@ -95,6 +96,8 @@ bottomDiv.appendChild(nbOfLikes);
 */
 
 likedImg.addEventListener('click', ()=>{
-    console.log(likedImg.src)
-    likedImg.setAttribute('src', `${likedImg.src.endsWith("liked.png") ? "../img/like.png" : "../img/liked.png"}`);
+    likedImg.setAttribute('src', `${likedImg.src.endsWith("liked.png") ? "img/like.png" : "img/liked.png"}`);
 })
+
+
+}
