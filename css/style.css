@@ -21,7 +21,7 @@ header{
 }
 
 .img-container{
-    width: 10%;
+    width: 3%;
     display: flex;
     align-items: center;
 }
@@ -35,5 +35,9 @@ p {
 }
 
 .interact-button img{
-    width: 15%;
+    width: 5%;
+}
+
+.bookmark{
+    width: 10%;
 }
