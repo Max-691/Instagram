@@ -31,6 +31,16 @@ imgContainer.appendChild(usernameParagraph);
 const sponsoParagraph = document.createElement('span');//Random sponsored posts
 usernameParagraph.appendChild(sponsoParagraph);
 
+//Points (more options)
+const points = document.createElement('div');
+points.classList.add('points')
+header.appendChild(points);
+// (pointsImg)
+const pointsImg = document.createElement('img');
+pointsImg.src="img/more.png";
+pointsImg.alt="more";
+points.appendChild(pointsImg);
+
 //Media div contains  'media'  that is posted picture)
 const mediaDiv = document.createElement('div');
 mediaDiv.classList.add('media');
@@ -47,7 +57,7 @@ footer.classList.add('footer');
 article.appendChild(footer);
 
 const interactButtonDiv = document.createElement('div');
-interactButtonDiv.classList.add('interactButton');
+interactButtonDiv.classList.add('interact-button');
 footer.appendChild(interactButtonDiv);
 
 //Like Button
@@ -78,17 +88,41 @@ sendImg.src="img/send.png";
 sendImg.alt="send";
 sendButton.appendChild(sendImg);
 
+//Bookmark button
+const bookButton = document.createElement('a');
+bookButton.href="#";
+interactButtonDiv.appendChild(bookButton);
+const bookImg = document.createElement('img');
+bookImg.src="img/bookmark.png";
+bookImg.alt="bookmark";
+bookButton.appendChild(bookImg);
+
 //Number of likes (likesNumber)
 const likesNumber = document.createElement('p');
+likesNumber.classList.add('nb-of-likes');
 likesNumber.innerHTML="Number of likes";// Random likes
 footer.appendChild(likesNumber);
+/*END OF DOM*/
 
 
+//Object
 const post = [
     {
         username: "user",
         profilePicture: "https://random.imagecdn.app/50/50",
-        isSponsored: false,
+        isSponsored: sponsoFunction,
         
     }
 ]
+
+// If random number is up to 35, sponsored = true
+const sponsoFunction = (min, max) =>{
+    let tmp = ((Math.floor(Math.random() * (max - min + 1))));
+    if (tmp > 35) {
+     post[0].isSponsored = true;
+    }
+ }
+ sponsoFunction(1, 50)
+
+ 
+
