@@ -49,6 +49,9 @@ p {
     margin-left: 10px;
 }
 
+article footer{
+    position: relative;
+}
 
 .interact-button{
     display: flex;
@@ -56,7 +59,10 @@ p {
 }
 
 .interact-button a:last-of-type{
-    align-self: flex-end;
+    width: 3%;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 
