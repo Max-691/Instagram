@@ -16,28 +16,65 @@ img{max-width: 100%;}
     align-items: center;
 }
 
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40%;
+}
+
 header{
     display: flex;
+    width: 100%;
 }
 
 .img-container{
-    width: 3%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
 
 .img-container img{
     border-radius: 100%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.img-container span{
+    display: block;
 }
 
 p {
     margin-left: 10px;
 }
 
-.interact-button img{
-    width: 5%;
+
+.interact-button{
+    display: flex;
+    width: 12%;
 }
 
+.interact-button a:last-of-type{
+    align-self: flex-end;
+}
+
+
+.media{
+    width: 100%;
+}
+
+.media img{
+    width: 100%;
+}
+
+
 .bookmark{
-    width: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 4%;
+}
+
+.bookmark p{
+    
 }
