@@ -1,3 +1,4 @@
+/*GLOBAL*/
 *{box-sizing: border-box;}
 html{font-size: 62.5%;}
 body{
@@ -8,19 +9,24 @@ body{
 }
 ul{padding: 0; margin: 0; list-style: none;}
 img{max-width: 100%;}
+p {margin-left: 10px;}
 
 
+/*Section contents posts*/
 #container-cards {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/*Article post*/
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 40%;
+    background: #bdbdbdb1;
+    border-radius: 25px;
 }
 
 header{
@@ -32,6 +38,7 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
+    padding: 1rem;
 }
 
 .img-container img{
@@ -45,17 +52,35 @@ header{
     display: block;
 }
 
-p {
-    margin-left: 10px;
+.points{
+    max-width: 5%;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+.points img{
+    width: 100%;
 }
 
+
+/*Post image*/
+.media{
+    width: 100%;
+}
+
+.media img{
+    width: 100%;
+}
+
+/*Footer*/
 .footer{
     position: relative;
+    padding: 1rem;
 }
 
 .interact-button{
     display: flex;
-    width: 12%;
+    width: 19%;
 }
 
 .interact-button a:last-of-type{
@@ -65,15 +90,13 @@ p {
     top: 0;
 }
 
-
-.media{
-    width: 100%;
+.footer a:nth-child(2), a:nth-child(3){
+    margin-left: 1rem;
 }
 
-.media img{
-    width: 100%;
+.footer a:last-child{
+    margin: 1rem;
 }
-
 
 .bookmark{
     display: flex;
@@ -81,6 +104,3 @@ p {
     width: 4%;
 }
 
-.bookmark p{
-    
-}
